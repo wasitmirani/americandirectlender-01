@@ -1,0 +1,1011 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Nov 08, 2021 at 05:44 PM
+-- Server version: 5.7.33
+-- PHP Version: 7.4.19
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `americanlender_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `applications`
+--
+
+CREATE TABLE `applications` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` text COLLATE utf8mb4_unicode_ci,
+  `property_value` text COLLATE utf8mb4_unicode_ci,
+  `property_update` text COLLATE utf8mb4_unicode_ci,
+  `property_address` text COLLATE utf8mb4_unicode_ci,
+  `promotion_detail` text COLLATE utf8mb4_unicode_ci,
+  `property_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hoa` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fee` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cash_out` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `refinance` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `payment_assurance` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `payment_surity` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `purchase` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `second_loan` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `loan_amount` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `investment_property` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_second_loan` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `cash_reserve` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fico` text COLLATE utf8mb4_unicode_ci,
+  `doc_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `occupant` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `income_source` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `income_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `recent_business_Activity` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `business_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_online` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tax_return` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fico_one` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fico_two` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fico_three` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `recent_business` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_online_reason` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `business_line` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `advice` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_business_partner` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `financial_history` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `monthly_rent` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `renovation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mortgage_statement` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `property_insured` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `liabilities_loans` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `applications`
+--
+
+INSERT INTO `applications` (`id`, `date`, `name`, `property_value`, `property_update`, `property_address`, `promotion_detail`, `property_type`, `hoa`, `fee`, `cash_out`, `refinance`, `payment_assurance`, `payment_surity`, `purchase`, `second_loan`, `loan_amount`, `investment_property`, `is_second_loan`, `cash_reserve`, `fico`, `doc_type`, `occupant`, `income_source`, `income_type`, `recent_business_Activity`, `business_type`, `is_online`, `tax_return`, `fico_one`, `fico_two`, `fico_three`, `recent_business`, `is_online_reason`, `business_line`, `advice`, `is_business_partner`, `financial_history`, `monthly_rent`, `renovation`, `mortgage_statement`, `property_insured`, `liabilities_loans`, `user_id`, `created_at`, `updated_at`, `status`) VALUES
+(5, '2021-10-06', 'Jeorge', '23', 'this about update', 'this example address', NULL, 'Condo', 'yes', NULL, '1', NULL, NULL, 'yes', '1', 'yes', '0-548k', '45', 'no', '34', '\"{\'1\\n2:\'\'3\'\"', 'Full', 'Owner', '34', '1099', 'recentdfhdf', NULL, 'no', 'no', NULL, NULL, NULL, 'recentdfhdf', 'fghdf', '1-2 Year(s)', 'this my advice don\'\'t take it easy', 'no', 'Late Payment', NULL, 'no', 'no', 'yes', 'these are liabilites', NULL, '2021-10-14 00:31:46', '2021-10-21 02:00:22', '1'),
+(6, '10/21/2021', 'New Application', '$                                           26', 'this is poperty update', 'Adress', NULL, 'house', 'yes', '107', '34', 'yes', NULL, 'no', 'yes', 'yes', '0-548k', '45', 'payoff', '35', '[\"3\", \"3\", \"4\"]', 'Full', 'Owner', NULL, 'w-2', NULL, NULL, NULL, 'yes', NULL, NULL, NULL, NULL, 'because ja be', '1-2 Year(s)', 'dfgd', 'on', 'Collection', NULL, 'no', 'yes', 'no', 'Tghis should be filed', NULL, '2021-10-15 06:57:17', '2021-10-19 01:10:51', '1'),
+(8, '11/24/2021', 'new app', '$                                         23', NULL, 'erwt', NULL, NULL, 'yes', '12', NULL, NULL, NULL, 'yes', 'yes', 'yes', '0-548k', '1234', 'payoff', '234', '[\"436\", \"436\", \"4\"]', 'full', 'owner', NULL, 'w-2', NULL, NULL, NULL, 'yes', NULL, NULL, NULL, NULL, 'fgdh', '1-2 Year(s)', 'trwte', 'on', 'Foreclosure', NULL, 'yes', 'yes', 'yes', '3erffgd', NULL, '2021-10-22 06:20:16', '2021-10-22 06:53:25', '0'),
+(9, '2021-10-05', 'Be App', '23', 'New update', 'newyork', NULL, 'TownHouse', 'yes', '12', 'yes', 'yes', NULL, 'yes', 'yes', 'yes', '0-548k', '123', 'payoff', '23', '[\"436\", \"4\", \"436\"]', 'full', 'owner', NULL, 'w-2', NULL, NULL, NULL, 'yes', NULL, NULL, NULL, NULL, 'dsfdg', '1-2 Year(s)', 'fg', 'on', 'Foreclosure', NULL, 'yes', 'yes', 'yes', 'erfgb', NULL, '2021-10-22 06:27:29', '2021-10-29 03:57:26', '1'),
+(10, '2021-10-29', 'Boomer', '34', 'yes', 'newyork', NULL, 'Condo', 'yes', '34', 'yes', 'yes', 'yes', 'no', 'yes', 'yes', '0-548k', '45', 'payoff', NULL, '[null,null,null]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'yes', 'yes', 'yes', 'sdfb', NULL, '2021-10-30 00:02:43', '2021-10-30 00:02:43', '0'),
+(11, '2021-10-05', 'Be App', '23', 'New update', 'newyork', NULL, 'TownHouse', 'yes', '12', 'yes', 'yes', NULL, 'yes', 'yes', 'yes', '0-548k', '123', 'payoff', '23', '[\"436\", \"4\", \"436\"]', 'full', 'owner', NULL, 'w-2', NULL, NULL, NULL, 'yes', NULL, NULL, NULL, NULL, 'dsfdg', '1-2 Year(s)', 'fg', 'on', 'Foreclosure', NULL, 'yes', 'yes', 'yes', 'this is liabilities', NULL, '2021-11-03 03:48:46', '2021-11-03 04:17:54', '1'),
+(12, '2021-11-21', 'efwv', '48181', 'dfg', 'dfgdh', NULL, 'House', 'yes', NULL, '1', NULL, NULL, 'yes', '1', 'yes', '0-548k', '226', 'payoff', '58', NULL, 'Full', 'Owner', '8/85', 'W-2', 'List Any Recently Closed/Opened Business(es):', NULL, 'yes', 'yes', NULL, NULL, NULL, 'List Any Recently Closed/Opened Business(es):', '225', '1-2 Year(s)', 'List Any Recently Closed/Opened Business(es):', 'yes', 'Foreclosure', NULL, 'yes', 'yes', 'yes', 'List Any Recently Closed/Opened Business(es):', NULL, '2021-11-04 00:48:19', '2021-11-05 05:15:32', '1'),
+(13, NULL, 'fdssssv', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-11-04 00:49:21', '2021-11-05 05:15:05', '0'),
+(14, '2021-11-22', 'Nelson App', '43', 'gfb', 'cvn', NULL, 'TownHouse', 'yes', '57', '1', '1', NULL, 'yes', '1', 'yes', '0-548k', '567', 'payoff', '435', NULL, 'Full', 'Investment', 'saffg', '1099', 'fdb', NULL, 'no', 'yes', 'rggg', 'rt', 'err', 'fdb', 'dfffb', '1-2 Year(s)', 'fb', 'yes', 'Bankruptcy', NULL, 'yes', 'yes', 'yes', '56uyh', NULL, '2021-11-06 02:32:12', '2021-11-06 02:32:45', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `application_agents`
+--
+
+CREATE TABLE `application_agents` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `application_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `agent_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `application_agents`
+--
+
+INSERT INTO `application_agents` (`id`, `application_id`, `agent_id`, `created_at`, `updated_at`) VALUES
+(6, 6, 2, '2021-10-20 07:20:02', '2021-10-20 07:20:02'),
+(10, NULL, NULL, '2021-10-21 02:18:58', '2021-10-21 02:18:58'),
+(11, NULL, NULL, '2021-10-21 02:38:25', '2021-10-21 02:38:25'),
+(12, NULL, NULL, '2021-10-21 02:41:55', '2021-10-21 02:41:55'),
+(23, 6, 3, '2021-10-22 23:24:47', '2021-10-22 23:24:47'),
+(27, 9, 2, '2021-10-29 03:57:26', '2021-10-29 03:57:26'),
+(28, 5, 2, '2021-10-29 04:21:25', '2021-10-29 04:21:25'),
+(30, 12, 2, '2021-11-05 00:13:19', '2021-11-05 00:13:19'),
+(31, 12, 1, '2021-11-05 04:23:32', '2021-11-05 04:23:32'),
+(32, 14, 4, '2021-11-06 02:32:45', '2021-11-06 02:32:45');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `application_attachments`
+--
+
+CREATE TABLE `application_attachments` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `application_id` bigint(20) UNSIGNED NOT NULL,
+  `agent_id` bigint(20) UNSIGNED NOT NULL,
+  `file` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `application_attachments`
+--
+
+INSERT INTO `application_attachments` (`id`, `application_id`, `agent_id`, `file`, `created_at`, `updated_at`) VALUES
+(2, 5, 1, NULL, '2021-07-19 18:40:53', '2021-07-19 18:40:53'),
+(4, 5, 3, '', '2021-10-21 06:15:58', '2021-10-21 06:15:58'),
+(8, 5, 3, '-1634860069.jpg', '2021-10-22 06:47:49', '2021-10-22 06:47:49'),
+(9, 6, 2, '-1634919928.png', '2021-10-22 23:25:29', '2021-10-22 23:25:29'),
+(11, 5, 2, '-1635546198.jpg', '2021-10-30 05:23:18', '2021-10-30 05:23:18'),
+(12, 9, 2, '-1635549861.pdf', '2021-10-30 06:24:21', '2021-10-30 06:24:21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `application_comments`
+--
+
+CREATE TABLE `application_comments` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `application_id` bigint(20) UNSIGNED NOT NULL,
+  `comment` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `application_comments`
+--
+
+INSERT INTO `application_comments` (`id`, `application_id`, `comment`, `created_at`, `updated_at`) VALUES
+(2, 5, NULL, '2021-10-21 06:15:58', '2021-10-21 06:15:58'),
+(5, 6, 'wetg', '2021-10-22 03:56:13', '2021-10-22 03:56:13'),
+(7, 5, 'this is testing comment', '2021-10-22 06:46:13', '2021-10-22 06:46:13'),
+(8, 5, 'test type', '2021-10-22 06:47:20', '2021-10-22 06:47:20'),
+(9, 6, 'ewfv', '2021-10-22 23:25:04', '2021-10-22 23:25:04'),
+(11, 9, '0\n23', '2021-10-22 23:36:34', '2021-10-22 23:36:34'),
+(12, 5, 'rfgb', '2021-10-29 03:55:21', '2021-10-29 03:55:21'),
+(13, 9, 'gtrh', '2021-10-29 03:57:36', '2021-10-29 03:57:36'),
+(14, 9, 'wertgr', '2021-10-29 03:58:00', '2021-10-29 03:58:00'),
+(15, 10, 'safaf', '2021-11-06 07:45:24', '2021-11-06 07:45:24'),
+(16, 10, 'saf', '2021-11-06 07:45:33', '2021-11-06 07:45:33');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `failed_jobs`
+--
+
+CREATE TABLE `failed_jobs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `logs`
+--
+
+CREATE TABLE `logs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2016_06_01_000001_create_oauth_auth_codes_table', 1),
+(4, '2016_06_01_000002_create_oauth_access_tokens_table', 1),
+(5, '2016_06_01_000003_create_oauth_refresh_tokens_table', 1),
+(6, '2016_06_01_000004_create_oauth_clients_table', 1),
+(7, '2016_06_01_000005_create_oauth_personal_access_clients_table', 1),
+(8, '2019_08_19_000000_create_failed_jobs_table', 1),
+(9, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(10, '2021_09_02_164658_create_permission_tables', 1),
+(11, '2021_09_10_181942_create_user_infos_table', 1),
+(12, '2021_09_20_162335_add_userinfo_to_users_table', 1),
+(13, '2021_10_04_173509_create_notifications_table', 1),
+(14, '2021_10_06_171528_create_applications_table', 1),
+(15, '2021_10_06_171935_create_application_agents_table', 1),
+(16, '2021_10_06_172112_create_application_attachments_table', 1),
+(17, '2021_10_06_172219_create_application_comments_table', 1),
+(18, '2021_10_12_234138_create_contacts_table', 1),
+(19, '2021_10_14_222711_add_status_in_applications', 2),
+(20, '2021_11_04_203323_create_logs_table', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_permissions`
+--
+
+CREATE TABLE `model_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `model_has_permissions`
+--
+
+INSERT INTO `model_has_permissions` (`permission_id`, `model_type`, `model_id`) VALUES
+(2, 'App\\Models\\User', 1),
+(4, 'App\\Models\\User', 1),
+(5, 'App\\Models\\User', 1),
+(9, 'App\\Models\\User', 1),
+(11, 'App\\Models\\User', 1),
+(6, 'App\\Models\\User', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_roles`
+--
+
+CREATE TABLE `model_has_roles` (
+  `role_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `model_has_roles`
+--
+
+INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
+(5, 'App\\Models\\User', 1),
+(3, 'App\\Models\\User', 2),
+(5, 'App\\Models\\User', 2),
+(7, 'App\\Models\\User', 2),
+(6, 'App\\Models\\User', 3),
+(3, 'App\\Models\\User', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notifications`
+--
+
+CREATE TABLE `notifications` (
+  `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `notifiable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `notifiable_id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `data` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `read_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `notifications`
+--
+
+INSERT INTO `notifications` (`id`, `type`, `notifiable_type`, `notifiable_id`, `title`, `body`, `data`, `read_at`, `created_at`, `updated_at`) VALUES
+('0b9742ae-dd2f-42b2-ae16-b3d3fdf274c6', 'App\\Notifications\\ChangePasswordNotification', 'App\\Models\\User', 2, NULL, NULL, '{\"title\":\"Change Password\",\"body\":\"Joe Cooper Updated Password\"}', NULL, '2021-10-20 08:00:56', '2021-10-20 08:00:56'),
+('2899acfa-3da3-4e11-a823-fc073764b48e', 'App\\Notifications\\NotifyUser', 'App\\Models\\User', 2, NULL, NULL, '{\"title\":\"new notification\",\"body\":\"this is notification body\"}', NULL, '2021-11-02 04:02:42', '2021-11-02 04:02:42'),
+('3a518803-4b03-4a7c-99a1-cbce04c8cfcc', 'App\\Notifications\\NotifyUser', 'App\\Models\\User', 2, NULL, NULL, '{\"title\":\"new notification\",\"body\":\"this is notification body\"}', NULL, '2021-11-02 04:02:59', '2021-11-02 04:02:59'),
+('43c8a0c1-b1a6-4c07-accd-80bf476847c3', 'App\\Notifications\\NotifyUser', 'App\\Models\\User', 2, NULL, NULL, '{\"title\":\"dfv\",\"body\":\"gxv\"}', NULL, '2021-11-02 05:27:31', '2021-11-02 05:27:31'),
+('8bbfdece-d192-4d3b-bf68-f7aad830c920', 'App\\Notifications\\ChangePasswordNotification', 'App\\Models\\User', 2, NULL, NULL, '{\"title\":\"Change Password\",\"body\":\"Joe Cooper Updated Password\"}', NULL, '2021-10-19 06:21:52', '2021-10-19 06:21:52'),
+('c68f0487-660e-472b-8372-df648e835421', 'App\\Notifications\\ChangePasswordNotification', 'App\\Models\\User', 2, NULL, NULL, '{\"title\":\"Change Password\",\"body\":\"Joe Cooper Updated Password\"}', NULL, '2021-10-20 08:00:56', '2021-10-20 08:00:56');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_access_tokens`
+--
+
+CREATE TABLE `oauth_access_tokens` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `client_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci,
+  `revoked` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `expires_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `oauth_access_tokens`
+--
+
+INSERT INTO `oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, `scopes`, `revoked`, `created_at`, `updated_at`, `expires_at`) VALUES
+('08fe5b1738f3a6fffd6a249d4691a66a8c006252833c8a6390aa9bd819961d3c9ca4effe6f32f6c1', 4, 1, '5daff807-7c74-42f2-b26d-6395fef6867e', '[]', 0, '2021-11-06 03:26:33', '2021-11-06 03:26:33', '2022-05-05 20:26:33'),
+('0cb12792275d8ce9eb5319486ee72c6210bc5f02edc2165b44b31d800ad61804a0e6c281735c59ca', 2, 1, 'd5ba8343-1731-4adb-b945-25a4aa305840', '[]', 0, '2021-11-01 23:37:02', '2021-11-01 23:37:02', '2022-05-01 16:36:58'),
+('0d6534eefa450d1de29eec884193926d7884480e872925d9da7818a59b908a9cdea3d1843623ab38', 1, 1, 'caecd6e5-10c0-477b-a748-32b27f336bd8', '[]', 0, '2021-11-05 23:21:14', '2021-11-05 23:21:14', '2022-05-05 16:21:06'),
+('17b9eaea9491ff6744a9f965c47f40015b2c39f07bc894f77229447e34237f3e314376753adbb028', 1, 1, '6ce2a534-5a90-4900-a8fd-78b977be1f0f', '[]', 0, '2021-10-29 00:43:04', '2021-10-29 00:43:04', '2022-04-28 17:43:01'),
+('17da988f9174b15728587d683496379105d9fc8d7c6c9cd40165d4259703b616c5c56d5659b6f901', 4, 1, '0102d396-7700-47a7-9a55-66081931aca3', '[]', 0, '2021-11-09 00:53:09', '2021-11-09 00:53:09', '2022-05-08 16:53:08'),
+('191b905f4d0390a7144079ac85f112f56a103b68fdce45b014da8e78b274678e27ab0810d94016a0', 1, 1, 'bf5d04f5-a508-4027-9b54-eb6c88de589b', '[]', 0, '2021-10-29 23:15:11', '2021-10-29 23:15:11', '2022-04-29 16:15:04'),
+('1d29370f6b095a0ba90036a47c0838922b32a3da76a3e2039f1743c6b843d1131f39cb6833b27206', 1, 1, '913d36ec-99c1-4285-ab45-6a5cc85080d7', '[]', 0, '2021-11-06 07:19:39', '2021-11-06 07:19:39', '2022-05-06 00:19:39'),
+('21b4892290a9312b163be03d80c3401d35b7a85ba5d23c265161441b515095eda11f7de63b3a98e6', 2, 1, 'ff4634bd-94c9-4501-9d68-d3921744d52e', '[]', 0, '2021-10-21 23:32:14', '2021-10-21 23:32:14', '2022-04-21 16:32:07'),
+('25b085051e1abb72f24234e4c68908f68e790b6a8d9b502281246482e239b304eb73cad2a6703525', 1, 1, '0657f200-aacd-4927-b66a-4144a1bad972', '[]', 0, '2021-11-06 02:41:59', '2021-11-06 02:41:59', '2022-05-05 19:41:59'),
+('2837144c7b984691fb0df42a6bcc4310e7ba64d2d0bc16d1a48d3265b65d395de311e2665c4537cc', 4, 1, 'aac4d514-c8d7-439a-88d3-6166105ebcfb', '[]', 0, '2021-11-09 01:18:09', '2021-11-09 01:18:09', '2022-05-08 17:18:09'),
+('2d52a69248dac7a0730e73593b29d419cc8daa26e29797d016b50d0e393112b268961dd95bb9fb4c', 4, 1, '6974bdba-4e77-4a5b-90e9-8b247adf1ae1', '[]', 0, '2021-11-06 07:20:07', '2021-11-06 07:20:07', '2022-05-06 00:20:07'),
+('300b084f5a25e0f34b1d65721ef07ccd9085cfaebee72c6f9f7e4eb67179be3b5cdaf1f741ca4c8d', 1, 1, '3e6748ee-f648-4e19-9428-817e41d1e676', '[]', 0, '2021-10-23 05:00:19', '2021-10-23 05:00:19', '2022-04-22 22:00:19'),
+('35902b5f78bcaad4f19ba29a0193209750e9745cf9df89bc4afd2ceac3ebbad6e9362b1ae423ae20', 1, 1, 'd027f40a-c5fe-43ca-b60e-ae4c7022e859', '[]', 0, '2021-10-15 23:30:40', '2021-10-15 23:30:40', '2022-04-15 16:30:35'),
+('3c4f3bbc8d0fc5e0f61418fd50b62d151bf0e833a40000749e73f4a754b4713f782c0054957f3e73', 1, 1, '75176890-f6cc-48cb-8544-afd519663ec4', '[]', 0, '2021-11-06 06:09:50', '2021-11-06 06:09:50', '2022-05-05 23:09:48'),
+('3cae11cf33c2528b7fe3914f412dd12de03a7b74e2486aa76865bae7cc5d16c6c2e3739c41ba3729', 1, 1, 'b7522a90-aefa-44d7-96a9-23319bb7c882', '[]', 0, '2021-11-06 07:33:27', '2021-11-06 07:33:27', '2022-05-06 00:33:27'),
+('3e13c3f0b108af0a32991fc52fa1ac9973867056e9bd8736f100f618fea732821844e7e90b8825a8', 1, 1, '0f483d1c-5e9a-4892-917c-dbc1f4291efc', '[]', 0, '2021-10-14 00:43:31', '2021-10-14 00:43:31', '2022-04-13 17:43:30'),
+('4742dc32b8fb114bbd3d0073e4440e59860116e9d5822ab33d7252e00f582f3c64d25f683b4a66dc', 1, 1, '7ddee6f1-5c2f-480e-9a5e-5153c1af61c7', '[]', 0, '2021-11-05 02:29:05', '2021-11-05 02:29:05', '2022-05-04 19:29:05'),
+('4848c646141a80343560a99fec5466325e09f990356136ae54a621660d91b12284fef399a71b468e', 1, 1, '93d6e616-6e1d-4d74-92c7-ec41a71cc012', '[]', 0, '2021-10-22 07:08:19', '2021-10-22 07:08:19', '2022-04-22 00:08:19'),
+('4df9d7a88ad35672f2f9e359b39342153e180296333c5cd38240f680ee8ee89dfe40340de0828759', 1, 1, '24c01e5d-c5ab-4519-9f7f-7c68427f1cdb', '[]', 0, '2021-11-09 00:34:55', '2021-11-09 00:34:55', '2022-05-08 16:34:55'),
+('4e978580c0a9200353e3e5ebc0adfb5c5dc1018e5dd57a5ad10eac0db53d0ad81121f1e56fce45da', 1, 1, '8cb41c0a-dd25-4dd9-8283-39bfc783d46d', '[]', 0, '2021-10-22 23:13:28', '2021-10-22 23:13:28', '2022-04-22 16:13:25'),
+('5845d17749a5235ff959ac19e16625cd8afad720f393511c7d46ff24247a830ed600cb4e35f98314', 1, 1, 'e8874010-1c18-4fc7-9029-398409a3d071', '[]', 0, '2021-11-04 23:33:38', '2021-11-04 23:33:38', '2022-05-04 16:33:36'),
+('5850c4d718acb7fd885690c00964bb5b37e208018221ab1d4eec48869f18e33402914423bdf7fd0b', 1, 1, 'a57dfb4c-44a0-4f35-b0dd-27d918a9edbd', '[]', 0, '2021-11-06 00:09:41', '2021-11-06 00:09:41', '2022-05-05 17:09:41'),
+('59509a423f32e7e82d52ee38b35bb94e8bf77be0d54e85e8b8c222182896d1bd98c39e4e5a080b82', 1, 1, 'cd6c0cd3-c2e4-4c09-a859-95c97763a21a', '[]', 0, '2021-11-06 07:09:07', '2021-11-06 07:09:07', '2022-05-06 00:09:07'),
+('5982dc40558b6bd58fdda1532a088afd405bb0896073ddd342d149525ea706b23019fd8ba3822588', 1, 1, '327406b9-b2ba-4dd8-a3b9-5acc72d35875', '[]', 0, '2021-11-06 04:01:35', '2021-11-06 04:01:35', '2022-05-05 21:01:35'),
+('624e3e8a7a92e9caae391059eceaaa53ad5c42d6f28cc79a1ed8136ea392f69dae1298afa56f7acd', 1, 1, '331edba6-f595-4756-9ced-bb3d89d9f473', '[]', 0, '2021-11-06 03:16:01', '2021-11-06 03:16:01', '2022-05-05 20:16:01'),
+('6e0eb707662044575152600889d5ac51b9f46859c4a3300c8091b3e8d11d28e55be822c7c2e32e30', 1, 1, '4519a310-4903-4c77-8d20-6e9ed710d7fd', '[]', 0, '2021-11-06 04:20:39', '2021-11-06 04:20:39', '2022-05-05 21:20:39'),
+('6e2513a7c5ff591f9dea1799263b1dc0d3a49c4149926c92607a821d0c76a94ccce7a8e9b8409f82', 4, 1, '9a2fd4a0-dda1-4549-899e-36f7952855d9', '[]', 0, '2021-11-06 00:14:02', '2021-11-06 00:14:02', '2022-05-05 17:14:02'),
+('7f26fd3aed40db8f39826fd9d11a3bf39f9dcf82ede1edfc96983b4ac1dee4ce6745a210ca0a5995', 2, 1, '8f15e564-1e13-4885-b628-6eff0c03c237', '[]', 0, '2021-10-21 07:41:28', '2021-10-21 07:41:28', '2022-04-21 00:41:26'),
+('80d4d99e9783b942d1eb29dddd105d132fffa00def600ba04339d95e5d1fe6e2900d2be0e1d419fe', 1, 1, 'f7117b52-05fc-4596-9183-3022fbc7b8e7', '[]', 0, '2021-11-02 00:13:27', '2021-11-02 00:13:27', '2022-05-01 17:13:26'),
+('8ac3188f86abcbf679dd7a0c1ccc7d06174c31224a8ab9042aa83205b5dc34be8823e8901bcc771c', 1, 1, '349d82ea-6bbd-434d-83ae-9ccb96f9b53c', '[]', 0, '2021-10-23 00:42:54', '2021-10-23 00:42:54', '2022-04-22 17:42:52'),
+('8cc19704612d16d90a8ab31aa9016a6c6579029e639743bc5263daa0f18e5cfeea7cdf19c978b2f7', 1, 1, '96b03f78-a5b3-432f-92f1-c34254aad884', '[]', 0, '2021-10-28 02:35:23', '2021-10-28 02:35:23', '2022-04-27 19:35:18'),
+('8d7fdf44155432dd3748db2e0c5ba07095fe00a109b407d07128d7d57b700a56673dcde0b8e5d53a', 4, 1, 'aa50fb8b-40cf-41ff-a20b-0837689bb0a0', '[]', 0, '2021-11-06 00:16:28', '2021-11-06 00:16:28', '2022-05-05 17:16:28'),
+('9001a89cf33c555d0731d4e8bb08b0bab56590b6f9382391ae9fc30aa7b877094d7f90c044ac809e', 5, 1, '5156e1ef-f91c-4ef5-9fe8-d64c0c8a5dc5', '[]', 0, '2021-11-06 00:02:47', '2021-11-06 00:02:47', '2022-05-05 17:02:47'),
+('9379c8903ea4b1c9587dedb7366d7b9ffa6fcc12f4bb8715cd1d53c2be4107968db534384dedd644', 1, 1, 'e986eee1-1a0d-4665-b210-24a983595c02', '[]', 0, '2021-10-16 04:27:44', '2021-10-16 04:27:44', '2022-04-15 21:27:42'),
+('99e18c917edd8b67490b4f254ccc7bc12265d1fd52706dd1e1080359896645f95e7879f8b9e72f8d', 1, 1, '1c29c317-eaff-4034-9f62-8f4183c86086', '[]', 0, '2021-11-09 01:14:58', '2021-11-09 01:14:58', '2022-05-08 17:14:58'),
+('a0592643efa586e670bb1fdcb71e3f04ece1024464f62199f6b43edee20b514f03cc02ce51380d56', 2, 1, 'e33cd108-92aa-40d2-9b1f-460a10db5314', '[]', 0, '2021-10-22 05:11:44', '2021-10-22 05:11:44', '2022-04-21 22:11:44'),
+('a14075a98ad50d66934769109e5f13d5abe7ffd6e31b049deb7199b106786501b43fbe21c710f250', 4, 1, '111cf11c-6c29-4eed-88de-b4a88d9c97d3', '[]', 0, '2021-11-06 07:08:31', '2021-11-06 07:08:31', '2022-05-06 00:08:31'),
+('a1674cfd6cf387318b6aeb6820837563147cf3477b1bcf789bcbaadbe0cc82f1d56224ffb3858f29', 1, 1, '68025ee3-b561-4f3a-9ab9-f9c4c1801beb', '[]', 0, '2021-10-22 06:12:26', '2021-10-22 06:12:26', '2022-04-21 23:12:26'),
+('a2217c873b978cdde1d8830dc588a85b11a8b258495c169308ddde294e868cd46fe2320bc9d2e7dd', 1, 1, '3890a381-f94f-4228-a7f5-7f6be3c2e14b', '[]', 0, '2021-11-09 00:41:55', '2021-11-09 00:41:55', '2022-05-08 16:41:55'),
+('a4b3bd0f1c37c7a2d8eface6e8e6ff28c38ef4fdc83f33ffdf6bea2576884e7e8024e18d39af9a15', 4, 1, '6a80de3f-ab09-45b6-b5f3-3a68f6b29579', '[]', 0, '2021-11-09 00:34:08', '2021-11-09 00:34:08', '2022-05-08 16:34:08'),
+('a5a680e4c101cb19bc48b71bdee1a4a48ea227c9a38f7e5edb4dfc4fc6080946760272a5d0538176', 1, 1, '82b6316b-fc6c-444d-a882-dee9e1d6fcea', '[]', 0, '2021-11-09 00:29:36', '2021-11-09 00:29:36', '2022-05-08 16:29:36'),
+('abda72e7380d71000a166dff6e3d093dff5c850705d01afabfd801892f173e4ceb116e9ef6a113f3', 4, 1, '3163efe1-b037-44e4-bcea-33da90c9c093', '[]', 0, '2021-11-06 02:48:12', '2021-11-06 02:48:12', '2022-05-05 19:48:12'),
+('ae389f7211c5eec08a856d0848e8cef1d13a1d41e994ac7f13f28e28ecc6d339e6377be737ff680c', 1, 1, 'a8ebb3d5-52a8-46ed-b603-7ff13299c67b', '[]', 0, '2021-11-02 23:33:46', '2021-11-02 23:33:46', '2022-05-02 16:33:44'),
+('b4104569aef3bfd592dc93e04cabcc2c62f7ea091cd2816d910dc0af9ddd64435595cfc806347ec1', 2, 1, '187249e2-dd03-490e-ac5c-4a64f3cc1bb0', '[]', 0, '2021-10-19 23:56:11', '2021-10-19 23:56:11', '2022-04-19 16:56:09'),
+('bf203758d6dd41727564b68bc68bff2a4f71daf2f2b2da306386355770690f893ab512fc7242a357', 4, 1, '1d39b847-ec9e-461d-a081-0af094797c7b', '[]', 0, '2021-11-06 00:09:06', '2021-11-06 00:09:06', '2022-05-05 17:09:06'),
+('c6ef77aedb87952b0a463351f20f0e7f08ffc3f597532687b5757a9df5df613954c5c0108090c410', 1, 1, 'f05570ed-e89a-43a0-84f8-4dc8a53b2ed0', '[]', 0, '2021-11-06 06:32:05', '2021-11-06 06:32:05', '2022-05-05 23:32:05'),
+('ccc6383ceebf8f09e9581cca01c72c2f4a4a2be7cb8e7c45ca6ce3b23d501ac831e78bebdd073d8e', 1, 1, 'b685e1aa-80d8-49f3-8d8b-64ad384b0caf', '[]', 0, '2021-10-14 23:27:22', '2021-10-14 23:27:22', '2022-04-14 16:27:11'),
+('ccff833840ded3689db8ab0cfb673445cf50c66f0066f69458d3f523fa82dd2a6eeea8365093bc02', 1, 1, 'f55158ec-a227-42ce-8d1b-6d0f3fce8e6b', '[]', 0, '2021-11-03 23:37:01', '2021-11-03 23:37:01', '2022-05-03 16:36:56'),
+('d1396f4cd660628715637642e516e049b9318ed22f08a615ffde13ee1fca2474093e09629ed3b4eb', 4, 1, 'a882b3be-b075-4662-b12c-eea259df2158', '[]', 0, '2021-11-06 04:19:56', '2021-11-06 04:19:56', '2022-05-05 21:19:56'),
+('e461d8abe7b80e671b9fb3da590c30078c23a1faa1ccae3bd41632f54252794c7cef38521349c97f', 1, 1, '7ef748ed-293d-49a3-82a4-70be43fa643e', '[]', 0, '2021-11-06 00:03:34', '2021-11-06 00:03:34', '2022-05-05 17:03:34'),
+('ea696037d831c63a59edec146fc0e801337fec89806009eece2510d28ca3c7f226fc046b9a4356d2', 1, 1, '1d624120-b42e-4359-99a1-64d6c0d62129', '[]', 0, '2021-11-09 00:23:30', '2021-11-09 00:23:30', '2022-05-08 16:23:22'),
+('ee13b2c50439e14e9feed0b5ef4f1899a6b970fd7d5f6759b3dd2c26b1ab3dc395c6f234f072bdf7', 4, 1, '3af35808-baf6-44fc-bbaa-a5dc00119971', '[]', 0, '2021-11-09 00:36:20', '2021-11-09 00:36:20', '2022-05-08 16:36:20'),
+('ee7251fea5ef68621cdfe3aab1d59a6ef21be99cd8bf993ce932d022199738932642f807da009713', 1, 1, '942928f0-34b9-4c1a-ad96-6fbd715e2466', '[]', 0, '2021-11-09 00:35:42', '2021-11-09 00:35:42', '2022-05-08 16:35:42'),
+('f0941bc096d91e0d688994e355e6f4d6b021c1588df3057f92168da0b77183e5b7f419560dcd08cf', 1, 1, '15081da6-b966-46ea-9fe1-69180035237a', '[]', 0, '2021-11-03 02:14:24', '2021-11-03 02:14:24', '2022-05-02 19:14:23'),
+('f0d25305d90050adc107a555205ba04d3d1273513442c980b4a7846f6ececf204ded50a09bd55902', 2, 1, '127cee56-c7be-4ca6-ad5a-3b9117bbb944', '[]', 0, '2021-10-20 23:22:23', '2021-10-20 23:22:23', '2022-04-20 16:22:20'),
+('f1053122cd58c2a5fc27ef02a7809c315ca80fa3967e9249a4780f01c44cbad95578d1724cb871f9', 4, 1, '2fcbd7ed-afb8-47d1-b20d-e3662000aaeb', '[]', 0, '2021-11-09 00:27:17', '2021-11-09 00:27:17', '2022-05-08 16:27:16'),
+('f3804a6a6d7f60779ea076465236fc73312c48e7d61a664270d78ac325e98878abc44cc8cb8e05e4', 1, 1, 'ebbd52cb-5500-40a2-8fc4-279d72f28479', '[]', 0, '2021-11-06 00:14:33', '2021-11-06 00:14:33', '2022-05-05 17:14:33'),
+('f6a5e372de9848b3ff428ce9d0cc3b3d14418f181bfc59699c82bd52c126f403b6e6d99d7dd3d8d3', 1, 1, 'd40e259b-b4b5-4b78-9975-f6ab229a27ce', '[]', 0, '2021-10-22 06:30:27', '2021-10-22 06:30:27', '2022-04-21 23:30:26'),
+('f9f38373ef80e7e2b9f82a59506078a87427a35bb1e8735bd26020b7f8224cba2573060463bf4c56', 4, 1, '610721f2-8f51-4997-95bf-3676592248a1', '[]', 0, '2021-11-06 05:58:50', '2021-11-06 05:58:50', '2022-05-05 22:58:50'),
+('ff8bc72a492a9f9b5ccae7cb4282dad43f42a787590ec42486fbd0a6d04a6071e8481b20d8f97b2c', 2, 1, 'e5b7af5d-2054-4a49-92ea-3b9dd5af2501', '[]', 0, '2021-10-18 23:30:44', '2021-10-18 23:30:44', '2022-04-18 16:30:42');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_auth_codes`
+--
+
+CREATE TABLE `oauth_auth_codes` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `client_id` bigint(20) UNSIGNED NOT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci,
+  `revoked` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_clients`
+--
+
+CREATE TABLE `oauth_clients` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `secret` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `provider` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `redirect` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `personal_access_client` tinyint(1) NOT NULL,
+  `password_client` tinyint(1) NOT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `oauth_clients`
+--
+
+INSERT INTO `oauth_clients` (`id`, `user_id`, `name`, `secret`, `provider`, `redirect`, `personal_access_client`, `password_client`, `revoked`, `created_at`, `updated_at`) VALUES
+(1, NULL, 'token', 'UqwDr6B1GdKk2nQC9joOiwQUdhru3ixXOE5qoT5F', NULL, 'http://localhost', 1, 0, 0, '2021-10-14 00:39:53', '2021-10-14 00:39:53');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_personal_access_clients`
+--
+
+CREATE TABLE `oauth_personal_access_clients` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `client_id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `oauth_personal_access_clients`
+--
+
+INSERT INTO `oauth_personal_access_clients` (`id`, `client_id`, `created_at`, `updated_at`) VALUES
+(1, 1, '2021-10-14 00:39:53', '2021-10-14 00:39:53');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_refresh_tokens`
+--
+
+CREATE TABLE `oauth_refresh_tokens` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `access_token_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_resets`
+--
+
+CREATE TABLE `password_resets` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `permissions`
+--
+
+CREATE TABLE `permissions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guard_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `permissions`
+--
+
+INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(1, 'applications-view', 'api', '2021-10-14 01:00:00', '2021-11-06 04:06:35'),
+(2, 'notify-view', 'api', '2021-10-14 01:00:26', '2021-10-14 01:00:26'),
+(3, 'permissions-view', 'api', '2021-10-14 01:02:14', '2021-10-14 01:02:14'),
+(4, 'roles-view', 'api', '2021-10-14 01:02:33', '2021-10-14 01:02:33'),
+(5, 'users-view', 'api', '2021-10-14 01:02:59', '2021-10-14 01:02:59'),
+(6, 'my-app-view', 'api', '2021-11-05 23:23:34', '2021-11-06 07:19:18'),
+(8, 'create-app', 'api', '2021-11-05 23:53:44', '2021-11-06 07:16:58'),
+(9, 'approved-app-view', 'api', '2021-11-05 23:54:16', '2021-11-06 07:18:44'),
+(11, 'app-list-view', 'api', '2021-11-06 00:07:12', '2021-11-06 07:17:47'),
+(12, 'management-view', 'api', '2021-11-09 00:30:15', '2021-11-09 00:30:15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `personal_access_tokens`
+--
+
+CREATE TABLE `personal_access_tokens` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `tokenable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tokenable_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `abilities` text COLLATE utf8mb4_unicode_ci,
+  `last_used_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `roles`
+--
+
+CREATE TABLE `roles` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guard_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(3, 'Agent', 'api', '2021-10-21 01:33:03', '2021-10-22 23:32:13'),
+(5, 'Admin', 'api', '2021-10-22 08:03:01', '2021-10-29 03:05:49'),
+(6, 'test role', 'api', '2021-11-02 06:59:42', '2021-11-02 06:59:42'),
+(7, '58', 'api', '2021-11-05 23:23:55', '2021-11-05 23:23:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_has_permissions`
+--
+
+CREATE TABLE `role_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `role_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `role_has_permissions`
+--
+
+INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
+(1, 3),
+(6, 3),
+(8, 3),
+(11, 3),
+(2, 5),
+(3, 5),
+(4, 5),
+(5, 5),
+(8, 5),
+(9, 5),
+(11, 5),
+(12, 5);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `last_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `thumbnail` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT 'default-profile.png',
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `token` longtext COLLATE utf8mb4_unicode_ci,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `last_name`, `thumbnail`, `email`, `user_name`, `phone`, `token`, `email_verified_at`, `password`, `user_id`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'admin', NULL, 'admin-1634858055.jpg', 'admin@gmail.com', NULL, '12345678', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTllMThjOTE3ZWRkOGI2NzQ5MGI0ZjI1NGNjYzdiYzEyMjY1ZDFmZDUyNzA2ZGQxZTEwODAzNTk4OTY2NDVmOTVlNzg3OWY4YjllNzJmOGQiLCJpYXQiOjE2MzYzOTE2OTguMzI4MzUsIm5iZiI6MTYzNjM5MTY5OC4zMjgzNTQsImV4cCI6MTY1MjAzMDA5OC4xNTM5MzksInN1YiI6IjEiLCJzY29wZXMiOltdfQ.T2JI3pUqdfcluq36CdouFyzE_gucIe5KUXk8KhodpeyvCf356KDfHRmTdE8CYDN2BO9ILes85pFKqjWnog2OaVJl_ckned25JxpEyt60OAgSxAl9btzhLxwDFzWIYn_-ElaC6iT8o1i52Q7SVZmoHHtiMRJ4Ff343pbNZST8zzo3e6c8TiRY-bBgimi1_jQ2FoN8qHLwpRggp0hPQduwInD7f3SkhIcTHbTJ6wiqaU01HCJSzAS1g96VypLhqe-mDrUAwN7qAFqhlWiBGQJ02efZH8oqVblVTyq-1GZQKt0Rywzl75k14k1ksKId3M7pRiklprOnufeDQHknIIjaB4zWbQE4F0fEOTS29R2NeEJh756x7JfUM8aturyHS9C-mTG8oeIZpugqo0TRGcPgItj6uxxg9mc2haN9LJqziJEBoHbB_iF1Y5XlNaYlkcF5aaDsXFlVpNXT88VtHbHk6hTEryowsc5U7kNNb4zgzngy8Im2hP9mcIOB9mOvZMdXRhdn6pzAt9vLs0o2B4avEemI-Ont9WueWIxh2T797Th5X_rNSmbp8SVHqjZ3pKPe1_ZjA5rsOaKk5Cd3LFd55A5OD8ekP3ER353h-QhhNRCkkP2ltEVEXQc9YyhilYv3_EmPiKG8mjtIvf-tMnPq8gXR33HuFgqO-ge4068WMeM', '2021-10-14 00:17:53', '$2y$10$KixXhFgihpbIMwMrvK1TVOdQtzovqRt7XSBrVVCIHtUNwzGA7ZUai', 1, 'funFZSFPqJzDlc64afWXpwcInZqRsPsoIqGRuGhpwmd42m7RHUOMfSTT3WLC', '2021-10-14 00:17:53', '2021-11-09 01:14:58'),
+(2, 'Joe Cooper', NULL, 'joe-cooper-1634680799.jpg', 'admin@admin.com', 'joecooper155328', '03234456789903456', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMGNiMTI3OTIyNzVkOGNlOWViNTMxOTQ4NmVlNzJjNjIxMGJjNWYwMmVkYzIxNjViNDRiMzFkODAwYWQ2MTgwNGEwZTZjMjgxNzM1YzU5Y2EiLCJpYXQiOjE2MzU3ODQ2MjMuMjY4MzExLCJuYmYiOjE2MzU3ODQ2MjMuMjY4MzE3LCJleHAiOjE2NTE0MjMwMTguNzQzMjg0LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.sdpl3V2QldiSDRySPJqFOy8CbWo7JGJl492dmOr8Cs2HcwgWdIbEeTTNjPWFEodD69LvMYFc5evSv5IH_9Hzaz1yW1jgmKOKDoidgN41E61G2Ztmk3tkp0KbmjGGsuH-hl8V9MDgVjUk9VBkQjUpeogVRcRlT0w6npuOtY5UQ1k-60cl6_45ffZ1wv9R9-zElG8JqzWj9G5-te0oFnNEuxV68xcCLuwlO8r2yeqqpnLpRSidGNA2pat47QUVw3_7lWrz6YFGu7_PEow6VguPyyzZ6iTZqW5yRFttUOMQP1Mo_9eyhOYxaT7432jO4w2mdHCFHQBZKjyrvpto_-m8-vo2McB2QnsqtTleGexKSWUsf6tD9hbulJ-lZ2IGW44dJbU8IVKc6mf4cniKhzSb4zV7HtfvrEiEQ0LhQK06FZ14gwBIXiJ0lnR8fF3Tv9fGlyXeLBiRxUVs0W1I6mUmLQTdxvUCdbTn8u-VhUaBeSRB03iyVnm0SvTbHUiQNOhoxDTaAGZLKOMYzVEF2211OwuPzyiondPZemCTENI4VXpvkjSEYt5brgVlOlq3Sw0GVPBdRW3FgqjEbSETYZu842Ygila-KMqPPOKih4PZOJ2c8DT_qwHV2MpK07EWtUbI_PY4TAF4HDsV9Y5r4ADcHpgNtatPzpE3yG8UV8qkrt4', NULL, '$2y$10$KixXhFgihpbIMwMrvK1TVOdQtzovqRt7XSBrVVCIHtUNwzGA7ZUai', 1, NULL, '2021-10-16 04:40:41', '2021-11-01 23:37:03'),
+(3, 'New User', NULL, 'default-profile.png', 'test@test', 'newuser304184', '1234567892', NULL, NULL, '$2y$10$21UVk5h.I9cuBwoz12viIOsRHKTWYjksQRnGeD1zoHanCOObuIUy.', 2, NULL, '2021-10-21 01:34:11', '2021-10-21 01:35:06'),
+(4, 'nelson', NULL, 'default-profile.png', 'nelson@gmail.com', NULL, NULL, 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjgzNzE0NGM3Yjk4NDY5MWZiMGRmNDJhNmJjYzQzMTBlN2JhNjRkMmQwYmMxNmQxYTQ4ZDMyNjViNjVkMzk1ZGUzMTFlMjY2NWM0NTM3Y2MiLCJpYXQiOjE2MzYzOTE4ODkuNzgzNjg3LCJuYmYiOjE2MzYzOTE4ODkuNzgzNjkyLCJleHAiOjE2NTIwMzAyODkuNTg0MzcyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.eoyn1PNijtmFiLXaCALvVct6Pjw1fqskqQMo-hF-sbb-_bQ6pQGv5VUFVbAmNzQQz56BxJmVg0FjXiNoMGQT8zGfeYBYUQB1Cu38XMHLWvaNB_9JQV6FPcgRwVSyXSQc9snW0i863na9o9wS52n1MwmA7a38LULPJNf5j-0fJtMUM75D7BczsYvO_XIsoY4pRkLG6WhG0MrJxCoi3mEviv0iCY58lnoVSEUqCT6zifiXNGxr3ZWgPsteGx2o1l6ef_qbJUN6PLWhuWuxOTx5kEbIs4bbhdbx-ehRRS8jz_SKDVx7-ipPeywGAjxMojZx650GCWJc1-J4rnCCet5cOIudPx6iEshnfR5tF6QZsQSY8iOG-JyHkSFUJV2yuUKaMKSN9xtw7PW5ytSM-uQIceYaajVceXuz0fwAVvABAbWET6CBAFbiqAclnRxc37CYGLacPwNwXxw6kltQAl2oIq2MXxWTguaNhJYCESf721-6NEZgJc2bENoeqR53SWwna9bNqU5WaVpwuL3sF7N_nCzZLei0FMlQ_H97CAPEZ4aGqN1JJfFbwlr3ff9aYVfkxYpVohEusVh1-ZBdzuq_KLqoGnslgy1dhFxMAU2femJjVX-wpLz9EtP4Z7TSL2cWJ6kF6cDyNRxndGlrkWCj43RJCufLboioDiHJVgxGrds', NULL, '$2y$10$f5Cu4GC/QdxG3.qOSRu6wOmsiOCGShCMbna5udUCpzObGfQDCrueq', NULL, NULL, '2021-11-05 23:57:39', '2021-11-09 01:18:09'),
+(5, 'welson tom', NULL, 'default-profile.png', 'welson@gmail.com', NULL, NULL, 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTAwMWE4OWNmMzNjNTU1ZDA3MzFkNGU4YmIwOGIwYmFiNTY1OTBiNmY5MzgyMzkxYWU5ZmMzMGFhN2I4NzcwOTRkN2Y5MGMwNDRhYzgwOWUiLCJpYXQiOjE2MzYxMzE3NjcuNDA1MzY4LCJuYmYiOjE2MzYxMzE3NjcuNDA1MzcxLCJleHAiOjE2NTE3NzAxNjcuMjA1MjcyLCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.aVczDCDqJjErPo_ymq6C3hjfY6JzNrDbl8eHPNBlv5H2ynoLbrOkv9zcLCxT9T2GxRT-ugj5Nee6kAsAb_0Q52q1X_L9N1dNjJ3IJmtBaUUZOkOvrBVA2A0LhNdhpjRVMvFuYwRYq1WZMmbjTZOe4nhin5yhAXM_JcbYbLACxSNG8BDfMOR-npDHJG02m1uh-AiPKHsk6IhLRwKU9YWDc2v6Kas7QqPyDtoxSbAqgwGGj2qoA1zBmu92nPnWDWqiXMelpUoJ9qm_EGaB0GdXYhBlhMkz7DhAtfWX33xXAkXrdYam20jOZyoH_5tK8eTvcLjokTe3X4Nl8R7xO4yiTTCIJuR2MeG_xsgDo_vNQPMm6xPUR4Jjzke1vwDe__YsxigONJYdyA1SJl4dfG7EJo284f0yQZWodIPs9yIvC3UC5ZxZuEDNa5UNMzselIkKYRzRn6QDubB0BKJP9VdFB_qLmPwh58hw-N9VlDGq_KWi8L9E1REEm_zzhyn6KN2ACtEfUL4xEVacuxLe8A8t6MpoCdee7xPWpHgcrR1jST36xKyHJ8rsBYcAmn2_bcODaWI8NE1gOOe9jZg_NYu1bVh8R_ibRQLRL_WWM3kko7cRE0KgscgKK7ytwE6-rTiiEs1j_ke0J9djpDFp1o5sq_XHhABJYE7vghgw01xiOoE', NULL, '$2y$10$ClvfR/qKj3Ii21q5Rjy7.u04BZRbz8.2FSGsDxsSe3b0c4GFbeCpq', NULL, NULL, '2021-11-06 00:02:24', '2021-11-06 00:02:47'),
+(6, 'vilson', NULL, 'default-profile.png', 'vilson@gmail.com', NULL, NULL, NULL, NULL, '$2y$10$KrQfSIz0s0pnOfwbET8Zge.wI0LqXd8tPbLAR6aEnTKzh0psZ1Hh6', NULL, NULL, '2021-11-06 06:25:13', '2021-11-06 06:25:13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_infos`
+--
+
+CREATE TABLE `user_infos` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `address` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `city` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `postal_code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `about_me` longtext COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `user_infos`
+--
+
+INSERT INTO `user_infos` (`id`, `created_at`, `updated_at`, `user_id`, `address`, `city`, `postal_code`, `country`, `about_me`) VALUES
+(1, '2021-10-16 04:40:41', '2021-10-20 04:59:59', 2, 'newyork', 'newyork', NULL, '1', 'I am Joe Cooper'),
+(2, '2021-10-16 04:42:37', '2021-10-22 06:14:15', 1, 'newyork', 'newyork', NULL, '1', 'I am admin of this system'),
+(3, '2021-10-20 04:06:30', '2021-10-20 04:59:59', 2, 'newyork', 'newyork', NULL, '1', 'I am Joe Cooper'),
+(4, '2021-10-21 01:34:11', '2021-10-21 01:34:11', 3, 'newyork', 'newyork', NULL, '1', 'dddddddg'),
+(5, '2021-10-21 01:35:06', '2021-10-21 01:35:06', 3, 'newyork', 'newyork', NULL, '1', 'I am New User'),
+(6, '2021-10-29 02:00:04', '2021-10-29 02:00:04', 1, 'newyork', 'newyork', NULL, '1', 'I am admin of this system'),
+(7, '2021-10-29 03:06:08', '2021-10-29 03:06:08', 2, 'newyork', 'newyork', NULL, '1', 'I am Joe Cooper'),
+(8, '2021-10-29 03:06:50', '2021-10-29 03:06:50', 2, 'newyork', 'newyork', NULL, '1', 'I am Joe Cooper'),
+(9, '2021-10-29 03:07:05', '2021-10-29 03:07:05', 1, 'newyork', 'newyork', NULL, '1', 'I am admin of this system'),
+(10, '2021-10-29 03:07:21', '2021-10-29 03:07:21', 1, 'newyork', 'newyork', NULL, '1', 'I am admin of this system');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `applications`
+--
+ALTER TABLE `applications`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `applications_user_id_foreign` (`user_id`);
+
+--
+-- Indexes for table `application_agents`
+--
+ALTER TABLE `application_agents`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `application_agents_application_id_foreign` (`application_id`),
+  ADD KEY `application_agents_agent_id_foreign` (`agent_id`);
+
+--
+-- Indexes for table `application_attachments`
+--
+ALTER TABLE `application_attachments`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `application_attachments_application_id_foreign` (`application_id`),
+  ADD KEY `application_attachments_agent_id_foreign` (`agent_id`);
+
+--
+-- Indexes for table `application_comments`
+--
+ALTER TABLE `application_comments`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `application_comments_application_id_foreign` (`application_id`);
+
+--
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- Indexes for table `logs`
+--
+ALTER TABLE `logs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
+-- Indexes for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD PRIMARY KEY (`role_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
+-- Indexes for table `notifications`
+--
+ALTER TABLE `notifications`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `notifications_notifiable_type_notifiable_id_index` (`notifiable_type`,`notifiable_id`);
+
+--
+-- Indexes for table `oauth_access_tokens`
+--
+ALTER TABLE `oauth_access_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_access_tokens_user_id_index` (`user_id`);
+
+--
+-- Indexes for table `oauth_auth_codes`
+--
+ALTER TABLE `oauth_auth_codes`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_auth_codes_user_id_index` (`user_id`);
+
+--
+-- Indexes for table `oauth_clients`
+--
+ALTER TABLE `oauth_clients`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_clients_user_id_index` (`user_id`);
+
+--
+-- Indexes for table `oauth_personal_access_clients`
+--
+ALTER TABLE `oauth_personal_access_clients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oauth_refresh_tokens`
+--
+ALTER TABLE `oauth_refresh_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_refresh_tokens_access_token_id_index` (`access_token_id`);
+
+--
+-- Indexes for table `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- Indexes for table `permissions`
+--
+ALTER TABLE `permissions`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`);
+
+--
+-- Indexes for table `personal_access_tokens`
+--
+ALTER TABLE `personal_access_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
+  ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
+
+--
+-- Indexes for table `roles`
+--
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `roles_name_guard_name_unique` (`name`,`guard_name`);
+
+--
+-- Indexes for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`role_id`),
+  ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `users_email_unique` (`email`),
+  ADD UNIQUE KEY `users_user_name_unique` (`user_name`),
+  ADD UNIQUE KEY `users_phone_unique` (`phone`),
+  ADD KEY `users_user_id_foreign` (`user_id`);
+
+--
+-- Indexes for table `user_infos`
+--
+ALTER TABLE `user_infos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_infos_user_id_foreign` (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `applications`
+--
+ALTER TABLE `applications`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `application_agents`
+--
+ALTER TABLE `application_agents`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `application_attachments`
+--
+ALTER TABLE `application_attachments`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `application_comments`
+--
+ALTER TABLE `application_comments`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `logs`
+--
+ALTER TABLE `logs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT for table `oauth_clients`
+--
+ALTER TABLE `oauth_clients`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `oauth_personal_access_clients`
+--
+ALTER TABLE `oauth_personal_access_clients`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `permissions`
+--
+ALTER TABLE `permissions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `personal_access_tokens`
+--
+ALTER TABLE `personal_access_tokens`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `roles`
+--
+ALTER TABLE `roles`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `user_infos`
+--
+ALTER TABLE `user_infos`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `applications`
+--
+ALTER TABLE `applications`
+  ADD CONSTRAINT `applications_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `application_agents`
+--
+ALTER TABLE `application_agents`
+  ADD CONSTRAINT `application_agents_agent_id_foreign` FOREIGN KEY (`agent_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `application_agents_application_id_foreign` FOREIGN KEY (`application_id`) REFERENCES `applications` (`id`);
+
+--
+-- Constraints for table `application_attachments`
+--
+ALTER TABLE `application_attachments`
+  ADD CONSTRAINT `application_attachments_agent_id_foreign` FOREIGN KEY (`agent_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `application_attachments_application_id_foreign` FOREIGN KEY (`application_id`) REFERENCES `applications` (`id`);
+
+--
+-- Constraints for table `application_comments`
+--
+ALTER TABLE `application_comments`
+  ADD CONSTRAINT `application_comments_application_id_foreign` FOREIGN KEY (`application_id`) REFERENCES `applications` (`id`);
+
+--
+-- Constraints for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `users`
+--
+ALTER TABLE `users`
+  ADD CONSTRAINT `users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `user_infos`
+--
+ALTER TABLE `user_infos`
+  ADD CONSTRAINT `user_infos_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

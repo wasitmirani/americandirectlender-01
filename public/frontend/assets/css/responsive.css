@@ -1,0 +1,518 @@
+@media (max-width: 1820px) {
+    section.home .container {
+    width: 66%;
+    padding-top: 45px;
+    padding-bottom: 43px;
+    padding-left: 41px;
+    padding-right: 46px;
+}
+
+section.banner {
+    padding: 5.5% 20% 5% 2%;
+}
+}
+@media (max-width: 1620px) {
+section.re-banner {
+    padding: 7% 2% 5% 2%;
+}
+    section.banner {
+    padding: 6% 20% 5% 2%;
+}
+
+section.banner .social-links ul li {
+    margin: 0px 6px;
+}
+
+header.head li.nav-item {
+    padding-left: 14px;
+}
+
+section.banner h2 {
+    font-size: 60px;
+    line-height: 58px;
+}
+
+section.banner p {
+    font-size: 19px;
+    line-height: 24px;
+    width: 79%;
+}
+
+section.banner .num-links {
+    right: 80px;
+}
+section.home .container {
+    width: 76%;
+    padding-top: 45px;
+    padding-bottom: 43px;
+    padding-left: 48px;
+    padding-right: 54px;
+}
+section.contact .start h2 {
+    width: 80%;
+    padding-left: 64px;
+}
+}
+@media (max-width: 1440px) {
+.home button.slick-prev.slick-arrow {
+    left: 800px;
+}
+    section.contact .container {
+    width: 60%;
+}
+
+section.cilent .blue-box p {
+    padding-top: 28px;
+}
+
+section.mortage {
+    width: 105%;
+}
+
+section.banner {
+    padding: 7% 20% 5% 2%;
+}
+
+header.head li.nav-item {
+    padding-left: 14px;
+}
+
+section.banner .social-links ul li {
+    margin: 0px 6px;
+}
+
+section.banner .social-links {
+    right: 2%;
+}
+
+section.banner .social-links ul li a {
+    font-size: 18px;
+}
+
+section.banner .social-links ul {
+    margin-top: 20px !important;
+}
+
+a.nav-link {}
+
+header.head a.nav-link.active {
+    font-size: 18px;
+}
+
+section.banner h2 {
+    font-size: 54px;
+    line-height: 56px;
+}
+
+section.banner p {
+    font-size: 19px;
+    line-height: 23px;
+}
+
+section.banner a {
+    font-size: 20px;
+}
+
+section.banner .carousel-control-next {
+    top: 44%;
+}
+
+section.banner .num-links {
+    right: 68px;
+}
+
+section.banner .num-links ul li a {
+    font-size: 18px;
+}
+
+.sec-para {
+    font-size: 16px;
+}
+
+section.hand .left-text h2 {
+    font-size: 43px;
+}
+
+section.hand .left-text p {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 86%;
+}
+
+section.hand .left-text a {
+    font-size: 20px;
+}
+
+section.mortage .gradient h2 {
+    font-size: 43px;
+}
+section.home .container {
+    width: 83%;
+    padding-top: 45px;
+    padding-bottom: 43px;
+    padding-left: 40px;
+    padding-right: 47px;
+}
+section.mortage .gradient p {
+    font-size: 20px;
+    line-height: 28px;
+}
+}
+@media (max-width: 1570px){
+    .home .slick-slide img {
+    width: 90%;
+}
+} 
+@media (max-width: 1366px) {
+.home button.slick-prev.slick-arrow {
+    left: 700px;
+}
+section.cilent .slick-prev {
+    left: -80px !important;
+}
+    section.banner h2 {
+    font-size: 52px;
+    line-height: 52px;
+}
+
+section.banner p {
+    font-size: 18px;
+    line-height: 22px;
+}
+section.home img {
+    position: relative;
+    left: -30px;
+}
+
+.home .hometext {
+    width: 90%;
+}
+section.banner .num-links h3 {
+    FONT-SIZE: 25PX;
+}
+
+section.banner .num-links ul li a {
+    font-size: 16px;
+    line-height: 1px;
+}
+
+header.head a.nav-link {
+    font-size: 17px;
+}
+
+header.head li.nav-item {
+    padding-left: 9px;
+}
+
+header.head ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    padding-left: 30px;
+}
+
+section.banner .social-links ul li a {
+    font-size: 16px;
+}
+
+section.hand .left-text h2 {
+    font-size: 40px;
+    line-height: 41px;
+}
+
+.hd {
+    font-size: 40px;
+}
+
+section.contact .start h2 {
+    font-size: 42px;
+}
+
+section.cilent .blue-box p {
+    padding-top: 16px;
+    line-height: 23px;
+    font-size: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #707070;
+    padding-left: 23px;
+    padding-right: 21px;
+}
+
+section.home .hometext p {
+    font-size: 18px;
+}
+
+section.home .hometext h2 {
+    font-size: 40px;
+}
+}
+@media (max-width: 1326px) {
+    section.home img {
+    left: -60px;
+}
+}
+@media (max-width: 1280px) {
+section.re-banner {
+    padding: 8% 2% 5% 2%;
+}
+section.home button.slick-next.slick-arrow {
+    right: 200px;
+}
+
+section.home .homeimg img {
+    width: 100% !important;
+}
+section.cilent .slick-prev {
+    left: -50px !important;
+}
+
+section.cilent .slick-next {
+    right: -50px !important;
+}
+section.home .hometext h2 {
+    width: 90%;
+}
+
+section.home .hometext p {
+    width: 80%;
+}
+    section.contact .start h2 {
+    font-size: 39px;
+}
+
+section.mortage .gradient p {
+    font-size: 19px;
+    line-height: 25px;
+}
+section.home img {
+    left: -120px;
+}
+section.banner h2 {
+    font-size: 48px;
+    line-height: 45px;
+}
+
+section.banner p {
+    width: 81%;
+    font-size: 16px;
+}
+
+section.banner a {
+    font-size: 18px;
+}
+}
+@media (max-width: 1240px) {
+    .home button.slick-prev.slick-arrow {
+    left: 650px;
+}
+}
+@media (max-width: 1199px) {
+.home button.slick-prev.slick-arrow {
+    left: 600px;
+}
+    section.banner .social-links ul li a {
+    font-size: 15px;
+}
+
+section.banner .social-links ul li {
+    margin: 0px 5px;
+}
+
+section.banner h2 {
+    font-size: 45px;
+}
+
+section.banner .num-links {
+    right: 48px;
+}
+
+section.banner {
+    padding: 8% 20% 5% 2%;
+}
+
+header.head li.nav-item {
+    padding-left: 0px;
+}
+
+header.head ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    padding-left: 0px;
+}
+
+header.head a.nav-link.active {
+    font-size: 16px;
+}
+
+header.head a.nav-link {
+    font-size: 16px;
+}
+
+section.process .box h3 {
+    color: #D30918;
+    font-size: 25px;
+    font-weight: 500;
+    width: 81%;
+    margin: 0 auto;
+    line-height: 32px;
+}
+
+.sec-para {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+section.hand .left-text h2 {
+    font-size: 34px;
+    line-height: 35px;
+}
+
+section.hand .left-text p {}
+
+section.hand .left-text a {
+    font-size: 18px;
+}
+
+section.mortage .gradient h2 {
+    font-size: 40px;
+}
+
+section.mortage .gradient p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+section.mortage .butn a {
+    font-size: 21px;
+}
+
+section.contact .start h2 {
+    font-size: 35px;
+}
+
+section.contact .contat-butn a {
+    font-size: 21px;
+}
+section.banner .carousel-control-next {
+    top: 42%;
+}
+footer.foot .footer1 p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+footer .privacy p, footer .copy p {
+    font-size: 15px;
+}
+
+section.cilent .blue-box img {
+    padding-left: 18px;
+    padding-top: 30px;
+    height: 128px;
+    width: 115px;
+}
+
+section.cilent .blue-box h2 {
+    font-size: 24px;
+}
+
+.hd {
+    font-size: 33px;
+}
+section.home .hometext p {
+    width: 80%;
+}
+section.cilent .blue-box p {}
+
+section.cilent .blue-box {
+    height: 293px;
+}
+}
+@media (max-width: 1024px) {
+    section.re-banner {padding: 9% 2% 5% 2%;}
+    section.banner h2 {
+    font-size: 36px;
+    line-height: 39px;
+}
+
+section.banner p {
+    width: 98%;
+}
+
+section.banner a {
+    font-size: 16px;
+}
+
+section.banner .num-links h3 {
+    font-size: 20px;
+}
+
+section.banner .num-links ul li a {
+    font-size: 15px;
+}
+
+section.banner .carousel-control-prev {
+    top: 40%;
+}
+
+section.banner .carousel-control-next {
+    top: 28%;
+}
+
+section.banner .social-links ul li a {
+    font-size: 12px;
+}
+
+header.head a.nav-link {
+    font-size: 15px;
+}
+
+header.head a.nav-link.active {
+    font-size: 15px;
+}
+
+section.banner {
+    padding: 9% 20% 5% 2%;
+}
+
+section.banner .social-links ul {
+    margin-top: 30px !important;
+}
+
+section.contact .start h2 {
+    font-size: 28px;
+}
+
+section.contact .contat-butn a {
+    font-size: 20px;
+}
+
+section.contact .contat-butn {
+    padding-top: 15px;
+}
+
+section.cilent .blue-box h2 {
+    font-size: 22px;
+}
+section.home .hometext p {
+    width: 80%;
+}
+
+section.home .container {
+    width: 96%;
+}
+
+section.cilent .blue-box p {
+    padding-top: 15px;
+    line-height: 22px;
+    font-size: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #707070;
+    padding-left: 23px;
+    padding-right: 21px;
+}
+
+section.cilent .blue-box {
+    height: 273px;
+}
+}
